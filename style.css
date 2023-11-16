@@ -1,41 +1,44 @@
 @charset "UTF-8";
 
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&family=Raleway:wght@100;500;600;900&display=swap");
+
+
 :root {
-    --green: #24725f;
-    --gray: #E0E1E0;
+    --wheat: #24725f;
+    --gray: #e4e2d6;
     --white: #ffffff;
     --ice-gray: #f1f1f1;
+    --content-font: 'Poppins', sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var();
+    font-family: var(--content-font);
 }
 
 body {
     line-height: 1.4;
-    background-color: var(--white);
+    background-color: rgb(249, 250, 238);
     overflow-x: hidden;
 }
 
 header {
-    background-color: var(--green);
-    padding: 24px;
+    background-color: var(--wheat);
+    padding: 0;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 header ul {
     position: relative;
     display: flex;
-    gap: 30px;
+    gap: 10px;
 }
 
 header ul li {
     list-style: none;
-    text-align: center;
-    align-items: center;
 }
 
 header ul li a {
@@ -56,7 +59,7 @@ header ul li a::before {
     background: var(--gray);
     transform: scaleX(0);
     transition: transform 0.5s ease-in-out;
-    transform-origin: center;
+    transform-origin: right;
 }
 
 header ul li a:hover::before {
@@ -66,13 +69,15 @@ header ul li a:hover::before {
 
 
 h1 {
-    color: var(--green);
+    color: rgb(0, 61, 0);
     margin-top: 30px;
 }
 
 h2 {
-    color: #ffffff;
+    color: black;
     text-decoration: none;
+    font-size: 12pt;
+    padding: 20px 400px 0px;
 }
 
 p {
@@ -85,8 +90,7 @@ p {
 .nav-bar {
     display: flex;
     justify-content: space-between;
-    padding: 1.2rem 5rem;
-
+    padding: 1.5rem 30rem;
 }
 
 .logo {
@@ -110,12 +114,16 @@ p {
 }
 
 .nav-item {
-    padding: 0 15px;
+    margin: 0 15px;
 }
 
 .nav-link {
     text-decoration: none;
-    font-size: 1.25rem;
-    color: #fff;
+    font-size: 14pt;
+    color: #ffffe5;
     font-weight: 400;
+}
+
+.Conteúdo {
+    text-align: center;
 }
