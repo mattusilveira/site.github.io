@@ -2,64 +2,60 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Início</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
 
+  <script src="index.js" defer></script>
 </head>
 
 <body>
-
-    <header>
-        <nav class="nav-bar">
-            <div class="logo">
-                <img src="img/favicon.png" alt="favicon" style="height: 100px; width: 125px;">
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="Floricultura.html" class="nav-link">Floricultura</a></li>
-                    <li class="nav-item"><a href="Chocolate.html" class="nav-link">Chocolates</a></li>
-                    <li class="nav-item"><a href="Presentes.html" class="nav-link">Presentes</a></li>
-                    <li class="nav-item"><a href="Cestas.html" class="nav-link">Cestas</a></li>
-                </ul>
-            </div>
-    </header>
-
-    <div class="carousel">
-        <input type="radio" name="carousel" id="slide1" checked>
-        <input type="radio" name="carousel" id="slide2">
-        <input type="radio" name="carousel" id="slide3">
-        <div class="slides">
-          <div class="slide">
-            <img src="img/bambu da sorte.jpg" style="height: 300px; width: 600px;"  ="Slide 1">
-          </div>
-          <div class="slide">
-            <img src="img/buqueLírio.jpg" alt="Slide 2">
-          </div>
-          <div class="slide">
-            <img src="img/buqueGirassol.jpg" alt="Slide 3">
-          </div>
-        </div>
-        <div class="navigation">
-          <label for="slide1"></label>
-          <label for="slide2"></label>
-          <label for="slide3"></label>
-        </div>
+  <!-- Cabeçalho -->
+  <header>
+    <nav class="nav-bar">
+      <div class="logo">
+        <img src="img/favicon.png" alt="favicon" style="height: 100px; width: 125px;">
       </div>
-    <div class="Conteúdo">
-        <h1>Título 1</h1>
-        <h2>Lorem ih2sum dolor sit, amet consectetur adih2isicing elit. Dolores beatae, a harum eius natus corh2oris
-            dolorum
-            maiores earum qui. Rem enim magni nostrum saeh2e temh2oribus laboriosam ab, ratione atque animi?Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Soluta quae earum ducimus dignissimos, porro, enim distinctio
-            ab excepturi quas iure explicabo deleniti obcaecati reprehenderit minima inventore animi, autem at neque.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe velit pariatur laboriosam illum ullam beatae
-            omnis. Placeat quo, atque est neque ad rerum animi nostrum provident vero eaque quaerat officia!</h2>
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="Floricultura.html" class="nav-link">Floricultura</a></li>
+          <li class="nav-item"><a href="Chocolate.html" class="nav-link">Chocolates</a></li>
+          <li class="nav-item"><a href="Presentes.html" class="nav-link">Presentes</a></li>
+          <li class="nav-item"><a href="Cestas.html" class="nav-link">Cestas</a></li>
+        </ul>
+      </div>
+  </header>
+
+  <!-- Carrossel -->
+
+  <div class="carrossel">
+    <div class="imagem">
     </div>
+  </div>
+
+  <div class="recentes">
+
+    <h2>
+      Recentes
+    </h2>
+
+    <div class="itens">
+
+    </div>
+
+    <div class="navegation">
+      <span id="anteriorRecentes">
+        <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+      </span>
+
+      <span id="proximoRecentes">
+        <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+      </span>
+    </div>
+  </div>
 </body>
 
 </html>
