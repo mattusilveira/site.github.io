@@ -1,0 +1,22 @@
+const flores = [
+    {"nome": "Rosa", "preco": 10.99},
+    {"nome": "Tulipa", "preco": 8.50},
+    {"nome": "Lírio", "preco": 12.75},
+    {"nome": "Orquídea", "preco": 15.99},
+    {"nome": "Girassol", "preco": 7.25},
+    {"nome": "Cravo", "preco": 9.99},
+    {"nome": "Margarida", "preco": 6.50},
+    {"nome": "Lavanda", "preco": 11.25},
+    {"nome": "Hortênsia", "preco": 14.75},
+    {"nome": "Gérbera", "preco": 8.99},
+    {"nome": "Íris", "preco": 10.50},
+    {"nome": "Dália", "preco": 13.25},
+    {"nome": "Azaleia", "preco": 9.75},
+    {"nome": "Cravina", "preco": 7.99},
+    {"nome": "Jasmim", "preco": 12.50},
+    {"nome": "Camélia", "preco": 11.99},
+    {"nome": "Calêndula", "preco": 6.99},
+    {"nome": "Begônia", "preco": 10.25},
+    {"nome": "Antúrio", "preco": 14.50},
+    {"nome": "Peônia", "preco": 16.75}
+]

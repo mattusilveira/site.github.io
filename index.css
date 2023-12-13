@@ -1,0 +1,107 @@
+/* Carrossel */
+
+.carrossel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.carrossel::-webkit-scrollbar {
+    display: none;
+}
+
+.carrossel .imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(./img/carrossel/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+/* Recentes e Mais Vendidos */
+
+.recentes, .maisVendidos {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.recentes h2, .maisVendidos h2 {
+    color: #24725f;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.recentes .itens, .maisVendidos .itens {
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    height: 600px;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.recentes .itens::-webkit-scrollbar, .maisVendidos .itens::-webkit-scrollbar {
+    display: none;
+}
+
+.recentes .itens .item, .maisVendidos .itens .item {
+    width: 300px;
+    background-color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.recentes .itens .item:hover, .maisVendidos .itens .item:hover {
+    transform: translateY(20px);
+}
+
+.recentes .itens .recentesActive, .maisVendidos .itens .maisVendidosActive {
+    transform: translateY(20px)
+}
+
+.recentes .itens .item img, .maisVendidos .itens .item img {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.recentes .navegation, .maisVendidos .navegation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.recentes .navegation span, .maisVendidos .navegation span {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
