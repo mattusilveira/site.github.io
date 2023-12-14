@@ -34,7 +34,7 @@ main {
     color: #fff;
 }
 
-.flores {
+.cestas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -43,7 +43,7 @@ main {
     justify-content: center;
 }
 
-.flores .item {
+.cestas .item {
     width: 300px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgb(206, 206, 206);
@@ -52,20 +52,20 @@ main {
     gap: 10px;
 }
 
-.flores .item img {
+.cestas .item img {
     width: 300px;
     height: 500px;
     object-fit: cover;
 }
 
-.flores .item .nome {
+.cestas .item .nome {
     padding: 0 10px;
     font-size: 1.2em;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.flores .item .preco {
+.cestas .item .preco {
     padding: 0 10px;
     font-size: 1.2em;
     font-weight: bold;

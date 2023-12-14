@@ -88,13 +88,14 @@ let activeRecentes = 0;
 itensRecentesDiv[activeRecentes].classList.add("recentesActive");
 
 function changeRecentes(index) {
-  activeRecentes = index;
 
   if (index < 0) {
     index = itensRecentes.length - 1;
   } else if (index >= itensRecentes.length) {
     index = 0;
   }
+
+  activeRecentes = index;
 
   itensRecentesDiv.forEach((item) => {
     item.classList.remove("recentesActive");
@@ -104,7 +105,7 @@ function changeRecentes(index) {
     itensRecentesDiv[index].scrollIntoView({
       behavior: "smooth",
       block: "nearest",
-      inline: "center",
+      inline: "start",
     });
   } else if (index == itensRecentes.length - 1) {
     itensRecentesDiv[index].scrollIntoView({
@@ -199,13 +200,14 @@ let activeMaisVendidos = 0;
 itensMaisVendidosDiv[activeMaisVendidos].classList.add("maisVendidosActive");
 
 function changeMaisVendidos(index) {
-  activeMaisVendidos = index;
-
+  
   if (index < 0) {
     index = itensMaisVendidos.length - 1;
   } else if (index >= itensMaisVendidos.length) {
     index = 0;
   }
+  
+  activeMaisVendidos = index;
 
   itensMaisVendidosDiv.forEach((item) => {
     item.classList.remove("maisVendidosActive");
@@ -215,18 +217,18 @@ function changeMaisVendidos(index) {
     itensMaisVendidosDiv[index].scrollIntoView({
       behavior: "smooth",
       block: "nearest",
-      inline: "center",
+      inline: "start",
     });
   } else if (index == itensMaisVendidos.length - 1) {
     itensMaisVendidosDiv[index].scrollIntoView({
       behavior: "smooth",
-      block: "end",
-      inline: "nearest",
+      block: "nearest",
+      inline: "end",
     });
   } else {
     itensMaisVendidosDiv[activeMaisVendidos].scrollIntoView({
       behavior: "smooth",
-      block: "center",
+      block: "nearest",
       inline: "center",
     });
   }

@@ -82,6 +82,20 @@
     object-fit: cover;
 }
 
+.recentes .itens .item .nome, .maisVendidos .itens .item .nome {
+padding: 0 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.recentes .itens .item .preco, .maisVendidos .itens .item .preco {
+    padding: 0 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #24725f;
+}
+
 .recentes .navegation, .maisVendidos .navegation {
     position: absolute;
     top: 50%;
